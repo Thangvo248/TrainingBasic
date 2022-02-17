@@ -16,4 +16,13 @@ When using Node.js, a special library module called libuv is used to perform asy
 When the thread pool completes a task, a callback function is called which handles the error(if any) or does some other operation. This callback function is sent to the event queue. When the call stack is empty, the event goes through the event queue and sends the callback to the call stack.
 
 The following diagram is a proper representation of the event loop in a Node.js server:
-![alt text](https://res.cloudinary.com/none-ptudw/image/upload/v1645092881/nodejs2_vn5ljk.png)
+![alt text](https://res.cloudinary.com/none-ptudw/image/upload/v1645093029/phasesofloop-300x240_nhnyv1.png)
+
+Phases of the Event loop: The following diagram shows a simplified overview of the event loop order of operations:
+
++ Timers: Callbacks scheduled by setTimeout() or setInterval() are executed in this phase.
++ Pending Callbacks: I/O callbacks deferred to the next loop iteration are executed here.
++ Idle, Prepare: Used internally only.
++ Poll: Retrieves new I/O events.
++ Check: It invokes setIntermediate() callbacks.
++ Close Callbacks: It handles some close callbacks. Eg: socket.on(‘close’, …)
