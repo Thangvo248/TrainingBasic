@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Thangvo248/TrainingBasic/issues"
   },
-  "homepage": "https://github.com/Thangvo248/TrainingBasic#readme"
+  "homepage": "https://github.com/Thangvo248/TrainingBasic#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
 }

@@ -28,3 +28,6 @@ Phases of the Event loop: The following diagram shows a simplified overview of t
 + Poll: Retrieves new I/O events.
 + Check: It invokes setIntermediate() callbacks.
 + Close Callbacks: It handles some close callbacks. Eg: socket.on(‘close’, …)
+
+## Blocking and Non-blocking
+Blocking refers to operations that block further execution until that operation finishes while non-blocking refers to code that doesn’t block execution. Or as Node.js docs puts it, blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes.
