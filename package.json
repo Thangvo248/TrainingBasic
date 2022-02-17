@@ -1,0 +1,19 @@
+{
+  "name": "trainingbasic",
+  "version": "1.0.0",
+  "description": "Training Nodejs Learn Grenneral",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thangvo248/TrainingBasic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thangvo248/TrainingBasic/issues"
+  },
+  "homepage": "https://github.com/Thangvo248/TrainingBasic#readme"
+}

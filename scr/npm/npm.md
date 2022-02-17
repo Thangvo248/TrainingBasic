@@ -16,11 +16,17 @@ Often you'll see more flags added to this command:
 + --no-save installs but does not add the entry to the package.json file dependencies
 + --save-optional installs and adds the entry to the package.json file optionalDependencies
 + --no-optional will prevent optional dependencies from being installed
+
 Shorthands of the flags can also be used:
 
 + S: --save
 + D: --save-dev
 + O: --save-optional
+
+## Uninstalling npm packages
+To uninstall a package you have previously installed locally (using npm install package-name in the node_modules folder, run:
+<pre><code>npm uninstall package-name</code></pre>
+
 ## Updating packages
 Updating is also made easy, by running
 
@@ -31,7 +37,8 @@ You can specify a single package to update as well:
 <pre><code>npm update package-name</code></pre>
 
 ## Running Tasks
-The package.json file supports a format for specifying command line tasks that can be run by using
+The package.json file supports a format for specifying command line tasks that can be run by using:
+
 Console:
 <pre><code>npm run task-name</code></pre>
 Json file:
