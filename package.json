@@ -4,6 +4,7 @@
   "description": "Training Nodejs Learn Grenneral",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/Thangvo248/TrainingBasic#readme",
   "dependencies": {
+    "express": "^4.17.3",
     "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
